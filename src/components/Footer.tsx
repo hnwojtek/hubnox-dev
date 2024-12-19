@@ -3,11 +3,7 @@ import logo from '../assets/images/logo-main.svg';
 import tiktok from '../assets/icons/icon-tiktok.webp';
 import instagram from "../assets/icons/icon-insta.svg";
 
-interface Props {
-  handlePopupToggle: () => void;
-}
-
-const Footer: React.FC<Props> = ({handlePopupToggle}) => {
+const Footer: React.FC = () => {
   return (
     <footer className="section-padding-sm">
       <div className="custom-container flex flex-col justify-between items-start gap-[20px] blg:flex-row blg:items-center">
@@ -21,14 +17,14 @@ const Footer: React.FC<Props> = ({handlePopupToggle}) => {
           </Link>
           <p>Follow us on social media</p>
           <div className="social-links">
-            <a href="https://www.instagram.com/hubnoxusa/?hl=en">
+            <a href="https://www.instagram.com/hubnoxusa/?hl=en" target="_blank" rel="noopener noreferrer">
               <img
                 src={instagram}
                 alt="Instagram"
                 aria-hidden="true"
               />
             </a>
-            <a href="https://www.tiktok.com/@hubnox">
+            <a href="https://www.tiktok.com/@hubnox" target="_blank" rel="noopener noreferrer">
               <img
                 src={tiktok}
                 alt="TikTok"
@@ -59,7 +55,7 @@ const Footer: React.FC<Props> = ({handlePopupToggle}) => {
               placeholder="Enter your email address"
               required
             />
-            <button type="submit" className="custom-button" onClick={handlePopupToggle}>
+            <button type="submit" className="custom-button">
               Subscribe
             </button>
           </form>

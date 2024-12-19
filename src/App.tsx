@@ -35,7 +35,7 @@ const App: React.FC = () => {
           <Route path="/event/:eventId" element={<EventDetailsPage />} />
         </Routes>
 
-        <Footer handlePopupToggle={handlePopupToggle}/>
+        <Footer/>
       </div>
     </Router>
   );

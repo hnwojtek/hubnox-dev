@@ -10,14 +10,14 @@ const Header: React.FC<HeaderProps> = ({ handlePopupToggle }) => {
   const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
   const location = useLocation();
   const path = location.pathname.toString();
-  const [showNav, setShowNav] = useState(path.includes('event') || path.includes('terms') || path.includes('policy'));
+  const [showNav, setShowNav] = useState(path.includes('event') || path.includes('terms') || path.includes('privacy'));
 
   const toggleNav = (): void => {
     setIsNavOpen(!isNavOpen);
   };
 
   useEffect(() => {
-    setShowNav(path.includes('event') || path.includes('terms') || path.includes('policy'));
+    setShowNav(path.includes('event') || path.includes('terms') || path.includes('privacy'));
   }, [location]);
 
   console.log('path', location.pathname, showNav);
@@ -56,7 +56,7 @@ const Header: React.FC<HeaderProps> = ({ handlePopupToggle }) => {
             </nav>
             <a
               href="#become-a-member"
-              className="custom-button btn--primary hidden lg:inline-flex"
+              className="custom-button btn--primary hidden lg:inline-flex hover:text-[#ee46bc]"
             >
               Request access
             </a>{" "}

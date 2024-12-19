@@ -58,7 +58,7 @@ h1,
 
 h2,
 .h2 {
-  font-size: 36px;
+  font-size: 32px;
   line-height: 1.22;
   font-weight: 600;
 }
@@ -306,6 +306,13 @@ select::-ms-expand {
   max-width: 1266px;
   margin-inline: auto;
   padding-inline: 25px;
+}
+
+.became-member {
+  display: grid;
+  grid-template-columns: 1fr 517px;
+  gap: 64px;
+  align-items: center;
 }
 
 .section-header {
@@ -572,7 +579,6 @@ p a:hover {
 
 .features__card p {
   color: #d0d5dd;
-  margin-top: 8px;
 }
 
 .features__icon {
@@ -784,10 +790,6 @@ p a:hover {
   font-weight: 400;
 }
 
-.profiles__card p {
-  margin-top: 8px;
-}
-
 .profiles__card a {
   margin-top: 16px;
   color: var(--color-secondary);
@@ -979,8 +981,8 @@ footer nav a {
   box-shadow: 0px 2px 15px 0px #ee46bc99;
   background-color: #fff;
   border-radius: 8px;
-  max-width: 500px;
-  min-height: 506px;
+  max-width: 589px;
+  min-height: 530px;
   padding: 40px;
   display: flex;
   flex-direction: column;

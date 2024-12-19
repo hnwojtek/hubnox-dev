@@ -18,7 +18,8 @@ import team3 from '../assets/images/team-3.jpg';
 
 import mobile from '../assets/images/mobile.png';
 
-import qr from "../assets/images/qr-code.png";
+import qrApp from "../assets/images/qr_appstore.png";
+import qrGoogle from "../assets/images/qr_googleplay.png";
 
 import google from "../assets/images/googlePlay.png";
 import apple from "../assets/images/appStore.png";
@@ -38,7 +39,7 @@ const Home: React.FC<Props> = ({ handlePopupToggle, isPopupOpen }) => {
             <h1 className="h1 mb-4 text-3xl md:text-4xl leading-tight">
               Events to inspire, disrupt, and impact
             </h1>
-            <p className="mb-8 text-lg">
+            <p className="mb-4 text-lg">
               Join Hubnox, community creating unique and unforgettable moments
             </p>
             <button
@@ -120,15 +121,15 @@ const Home: React.FC<Props> = ({ handlePopupToggle, isPopupOpen }) => {
         </section>
 
         <section className="img-w-text section-padding-md">
-          <div className="custom-container flex flex-col-reverse md:flex-row gap-[64px]">
-            <div className="img-w-text__img w-full md:w-1/2">
+          <div className="custom-container became-member">
+            <div className="img-w-text__img">
               <img
                 src={member}
                 alt="img-w-text"
                 aria-hidden="true"
               />
             </div>
-            <div className="w-full md:w-1/2 img-w-text__text">
+            <div className="img-w-text__text">
               <h2 className="h2 mb-4">
                 Join <span>Hubnox</span> for events that will change your life!
               </h2>
@@ -358,14 +359,14 @@ const Home: React.FC<Props> = ({ handlePopupToggle, isPopupOpen }) => {
 
         <section className="app" id="become-a-member">
           <div className="custom-container flex flex-col-reverse justify-between items-start max-w-[1226] gap-[87px] md:flex-row md:items-center pt-[36px]">
-            <div className="app__img md:w-1/2">
+            <div className="app__img md:w-[60%]">
               <img
                 src={mobile}
                 alt="img"
                 aria-hidden="true"
               />
             </div>
-            <div className="md:w-1/2">
+            <div className="md:w-[60%]">
               <h2 className="h2 text-2xl mb-[16px] font-semibold">
                 Download <span>Hubnox </span> app, create, and join best
                 industry events
@@ -424,18 +425,21 @@ const Home: React.FC<Props> = ({ handlePopupToggle, isPopupOpen }) => {
           <h2 className="popup__title">
             Get <span>Hubnox</span> App
           </h2>
-          <p>
-            Scan the QR code using your phone's camera
-          </p>
-          <img src={qr} alt="" />
-          <p>or download the app from the Apple Store or Google Play.</p>
+          <p>Download the app from the Apple Store or Google Play.</p>
           <div className="flex justify-between gap-[20px]">
             <a href="https://apps.apple.com/us/app/hubnox/id6504521207">
               <img src={apple} className="w-[180px] h-[60px] object-contain"/>
             </a>
-            <a href="https://play.google.com/store/apps/details?id=com.hubnox object-contain">
-            <img src={google} className="w-[180px] h-[60px]"/>
+            <a href="https://play.google.com/store/apps/details?id=com.hubnox">
+            <img src={google} className="w-[180px] h-[60px] object-contain"/>
             </a>
+          </div>
+          <p>
+            Or scan the QR code using your phone's camera
+          </p>
+          <div className="flex gap-[29px]">
+          <img src={qrApp} alt="" />
+          <img src={qrGoogle} alt="" />
           </div>
         </div>
       </div>
