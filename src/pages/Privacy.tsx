@@ -8,7 +8,7 @@ const Privacy: React.FC = () => {
 
   return (
     <main>
-      <section className="hero">
+      <section className="hero-bg">
         <div className="pl-6 pr-6">
           <h1>Privacy Policy of HubNox</h1>
 

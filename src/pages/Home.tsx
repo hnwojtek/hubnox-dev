@@ -24,6 +24,8 @@ import qrGoogle from "../assets/images/qr_googleplay.png";
 import google from "../assets/images/googlePlay.png";
 import apple from "../assets/images/appStore.png";
 
+import downloadNow from "../assets/images/download-now.png";
+
 interface Props {
   handlePopupToggle: () => void;
   isPopupOpen: boolean;
@@ -358,30 +360,43 @@ const Home: React.FC<Props> = ({ handlePopupToggle, isPopupOpen }) => {
         </section>
 
         <section className="app" id="become-a-member">
-          <div className="custom-container flex flex-col-reverse justify-between items-start max-w-[1226] gap-[87px] md:flex-row md:items-center pt-[36px]">
-            <div className="app__img md:w-[60%]">
+          <div className="custom-container flex flex-col-reverse items-start max-w-[1226] gap-[87px] blg:flex-row md:items-center pt-[36px]">
+            <div className="app__img max-w-[393px] w-full">
               <img
                 src={mobile}
                 alt="img"
                 aria-hidden="true"
               />
             </div>
-            <div className="md:w-[60%]">
-              <h2 className="h2 text-2xl mb-[16px] font-semibold">
-                Download <span>Hubnox </span> app, create, and join best
-                industry events
-              </h2>
-              <p>
-                Scan the QR code to join our community of early adopters or {' '}
-                <a
-                  className="ea-link"
-                  target="_blank"
-                  href="https://tally.so/r/mOLDA7"
-                >
-                  click here
-                </a>
-              </p>
+            <div className="w-full">
+              <div className="max-w-[573px]">
+                <h2 className="h2 text-2xl mb-[16px] font-semibold">
+                  Download <span>Hubnox </span> app and explore a diverse range of beauty events!
+                </h2>
+                <p>
+                  Scan the QR code using your phone's camera or download the app from the Apple Store or Google Play.
+                </p>
+              </div>
+              <div className="flex flex-col justify-between gap-8 items-start w-full mt-[50px] md:flex-row md:items-center md:gap-0">
+                <img src={downloadNow} alt="download now" className="w-[303px] h-[111px] object-cover" />
+                <div className="flex gap-[43px]">
+                  <div className="flex flex-col gap-[19px] items-center">
+                    <a href="https://apps.apple.com/us/app/hubnox/id6504521207">
+                      <img src={apple} className="w-[134px] h-[46px] object-contain" />
+                    </a>
+                    <img src={qrApp} alt="" className="w-[96px] h-[96px]" />
+                  </div>
+                  <div className="flex flex-col gap-[19px] items-center">
+                    <a href="https://play.google.com/store/apps/details?id=com.hubnox">
+                      <img src={google} className="w-[134px] h-[46px] object-contain" />
+                    </a>
+                    <img src={qrGoogle} alt="" className="w-[96px] h-[96px]" />
+                  </div>
+                </div>
+
+              </div>
             </div>
+
           </div>
         </section>
       </main>
@@ -428,18 +443,27 @@ const Home: React.FC<Props> = ({ handlePopupToggle, isPopupOpen }) => {
           <p>Download the app from the Apple Store or Google Play.</p>
           <div className="flex justify-between gap-[20px]">
             <a href="https://apps.apple.com/us/app/hubnox/id6504521207">
-              <img src={apple} className="w-[180px] h-[60px] object-contain"/>
+              <img src={apple} className="w-[134px] h-[36px] object-contain" />
             </a>
             <a href="https://play.google.com/store/apps/details?id=com.hubnox">
-            <img src={google} className="w-[180px] h-[60px] object-contain"/>
+              <img src={google} className="w-[134px] h-[36px] object-contain" />
             </a>
           </div>
           <p>
             Or scan the QR code using your phone's camera
           </p>
-          <div className="flex gap-[29px]">
-          <img src={qrApp} alt="" />
-          <img src={qrGoogle} alt="" />
+          <div className="hidden l:flex gap-[29px]">
+            <img src={qrApp} alt="" />
+            <img src={qrGoogle} alt="" />
+          </div>
+
+          <div className="flex l:hidden gap-[43px]">
+            <div className="flex flex-col gap-[19px] items-center">
+              <img src={qrApp} alt="" className="w-[96px] h-[96px]" />
+            </div>
+            <div className="flex flex-col gap-[19px] items-center">
+              <img src={qrGoogle} alt="" className="w-[96px] h-[96px]" />
+            </div>
           </div>
         </div>
       </div>

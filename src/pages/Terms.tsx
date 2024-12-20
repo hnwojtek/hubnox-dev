@@ -6,7 +6,7 @@ const Terms: React.FC = () => {
   }, []);
   return (
     <main>
-      <section className="hero">
+      <section className="hero-bg">
         <div className="custom-container">
           <h1 id="hubnox-terms-of-service">Hubnox - Terms of Service</h1>
           <p><em>Last Updated: [DATE]</em></p>

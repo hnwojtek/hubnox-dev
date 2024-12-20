@@ -58,7 +58,7 @@ const EventSlide: React.FC<EventProps> = ({
           )}`}</p>
         </div>
 
-        <h2 className="text-xl font-bold my-2 text-[#D0D5DD]">{truncateText(name, 25)}</h2>
+        <h2 className="text-xl font-bold mb-2 text-[#D0D5DD]">{truncateText(name, 25)}</h2>
         <p className="text-gray-300 text-sm flex-grow">
 
           {truncateText(description, 35)}
