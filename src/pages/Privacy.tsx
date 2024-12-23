@@ -3,8 +3,10 @@ import React, { useEffect } from "react";
 const Privacy: React.FC = () => {
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location]);
+    setTimeout(() => {
+      window.scroll({ top: 0, left: 0, behavior: 'smooth' });
+    }, 100); 
+  }, []);
 
   return (
     <main>

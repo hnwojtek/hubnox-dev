@@ -2,8 +2,11 @@ import React, { useEffect } from 'react';
 
 const Terms: React.FC = () => {
   useEffect(() => {
-    window.scrollTo(0, 0);
+    setTimeout(() => {
+      window.scroll({ top: 0, left: 0, behavior: 'smooth' });
+    }, 100); 
   }, []);
+  
   return (
     <main>
       <section className="hero-bg">
