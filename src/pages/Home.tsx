@@ -443,10 +443,10 @@ const Home: React.FC<Props> = ({ handlePopupToggle, isPopupOpen }) => {
           <p>Download the app from the Apple Store or Google Play.</p>
           <div className="flex justify-between gap-[20px]">
             <a href="https://apps.apple.com/us/app/hubnox/id6504521207">
-              <img src={apple} className="w-[134px] h-[36px] object-contain" />
+              <img src={apple} className="w-[134px] h-[46px] object-contain l:object-cover" />
             </a>
             <a href="https://play.google.com/store/apps/details?id=com.hubnox">
-              <img src={google} className="w-[134px] h-[36px] object-contain" />
+              <img src={google} className="w-[134px] h-[46px] object-contain l:object-cover" />
             </a>
           </div>
           <p>

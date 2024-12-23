@@ -35,7 +35,7 @@ const Header: React.FC<HeaderProps> = ({ handlePopupToggle }) => {
         {!showNav && (
           <>
             <nav
-              className={`flex  flex-row  items-center justify-center mr-10 text-center lg:w-[700px]   ${isNavOpen ? "active" : ""
+              className={`flex  items-center justify-center mr-10 text-center lg:w-[700px]   ${isNavOpen ? "active" : ""
                 }`}
             >
               <a href="#events" onClick={toggleNav}>
